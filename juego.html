@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enfonsar la flota</title>
+  <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg/1200px-RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg">
+
+  <style>
+    
+
+    .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-height: 330px; /* Ajusta la altura máxima según tus necesidades */
+  overflow: hidden;
+
+}
+
+
+    canvas {
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    #registroAtaque {
+      height: 300px;
+      overflow-y: scroll;
+      padding: 10px;
+      margin-top: 20px;
+      width: 275px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enfonsar la flota</h1>
+  <div class="container">
+    <canvas id="tableroJugador" width="330" height="330"></canvas>
+
+    <div id="registroAtaque"></div>
+
+    <canvas id="tableroOponente" width="330" height="330"></canvas>
+  </div>
+  <div class="container">    <button id="botonReinicio">Reiniciar el juego</button>
+  </div>
+  <script src="juego.js"></script>
+</body>
+</html>
